@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhap so "));
+    let snt = true;
+    console.log(number);
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            alert(number + "khong la so nguyen to ");
+            snt = false;
+            break;
+        }
+    }
+    if (snt === true) {
+        alert(number + "la so nguyen to ")
+    }
+
+</script>
+</body>
+</html>
